@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader Pro - Download Video TikTok Tanpa Watermark</title>
+    <meta name="description" content="Download video TikTok dengan mudah, cepat, dan tanpa watermark. Gratis dan tanpa batas!">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-tiktok"></i>
+                <h1>TikTok Downloader Pro</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#how-to">Cara Download</a></li>
+                    <li><a href="#comments">Komentar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Download Video TikTok <span>Tanpa Watermark</span></h2>
+                <p>Unduh video TikTok favorit Anda dengan kualitas tinggi, cepat, dan gratis!</p>
+                
+                <!-- Download Form -->
+                <div class="download-form">
+                    <div class="input-group">
+                        <input type="text" id="tiktok-url" placeholder="Tempel URL video TikTok di sini..." autocomplete="off">
+                        <button id="download-btn" class="btn-primary">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Memproses video...</p>
+                    </div>
+                </div>
+                
+                <!-- Result Section -->
+                <div id="result" class="result-section">
+                    <!-- Video preview and download buttons will appear here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section id="how-to" class="how-to">
+        <div class="container">
+            <h2>Cara Download Video TikTok</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Salin URL Video</h3>
+                    <p>Buka aplikasi TikTok dan salin tautan video yang ingin Anda download.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Tempel URL di Sini</h3>
+                    <p>Tempel tautan TikTok ke dalam kotak input di atas.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Klik Download</h3>
+                    <p>Klik tombol download dan tunggu proses selesai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Section -->
+    <section class="rating-section">
+        <div class="container">
+            <h2>Beri Rating untuk Website Kami</h2>
+            <div class="rating-stars">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+            </div>
+            <p id="rating-text">Klik bintang untuk memberi rating</p>
+            <div id="rating-stats">
+                <p>Rating Rata-rata: <span id="average-rating">0</span> (<span id="total-ratings">0</span> rating)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section id="comments" class="comments-section">
+        <div class="container">
+            <h2>Komentar Pengguna</h2>
+            <div class="comment-form">
+                <input type="text" id="comment-name" placeholder="Nama Anda" maxlength="30">
+                <textarea id="comment-text" placeholder="Tulis komentar Anda di sini..." maxlength="500"></textarea>
+                <button id="submit-comment" class="btn-primary">Kirim Komentar</button>
+            </div>
+            <div id="comments-list" class="comments-list">
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TikTok Downloader Pro</h3>
+                    <p>Layanan download video TikTok terbaik dengan kualitas tinggi dan tanpa watermark.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Dukung Kami</h3>
+                    <p>Jika Anda menyukai layanan ini, pertimbangkan untuk mendukung pengembangan kami.</p>
+                    <a href="https://saweria.co/BaxzGit" target="_blank" class="saweria-btn">
+                        <i class="fas fa-coffee"></i> Support via Saweria
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Email: bayuraya711@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BaxzGit TikTok Downloader Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Element for Notification Sound -->
+    <audio id="notification-sound" preload="auto">
+        <source src="sounds/notification.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
